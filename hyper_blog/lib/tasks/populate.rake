@@ -9,16 +9,12 @@ namespace :db do
   
   task create_spaces: :environment do
     [User, Tag, Post, PostTag].each do |klass|
-      system klass.destroy_space
-      system klass.create_space
+      klass.destroy_space
+      klass.create_space
     end
   end
 
   task populate: :environment do
-    # User.destroy_all
-    # Tag.destroy_all
-    # Post.destroy_all
-    
     User.create! username: "goggin13", password: "password"
     
     tags = (0..20).map do |n|
