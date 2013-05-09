@@ -8,5 +8,6 @@ hyperdex daemon -f --listen=127.0.0.1 \
                    --listen-port=2012 \
                    --coordinator=127.0.0.1 \
                    --coordinator-port=1982 \
-                   --data=~/data/daemon_data
+                   --data=/home/ubuntu/data/daemon_data \
+		   --daemon
 

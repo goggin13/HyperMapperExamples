@@ -1,5 +1,6 @@
-PATH
-  remote: /home/goggin/projects/rails/hyper_mapper
+GIT
+  remote: https://github.com/goggin13/HyperMapper.git
+  revision: 39a1d623623a5021119667014ca2e9da82b4996e
   specs:
     hyper_mapper (0.0.1)
       activemodel (~> 3.2.11)

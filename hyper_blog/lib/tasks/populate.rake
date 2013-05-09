@@ -9,7 +9,7 @@ namespace :db do
   
   task create_spaces: :environment do
     [User, Tag, Post, PostTag].each do |klass|
-      klass.destroy_space
+      # klass.destroy_space
       klass.create_space
     end
   end
