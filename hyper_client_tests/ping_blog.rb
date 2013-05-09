@@ -15,7 +15,7 @@ while true
     result_file.puts "\tgot #{result_object.length} objects in response"
   end
   result_file.flush
-  sleep(0.5)
+  sleep(1.5)
 end
 
 

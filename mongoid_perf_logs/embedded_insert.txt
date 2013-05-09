@@ -1,0 +1,115 @@
+httperf --hog --client=0/1 --server=10.144.85.40 --port=3000 --uri=/embedded_insert?post[title]=goggin13&post[content]=helloworld --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 46.611 s
+
+Connection rate: 42.9 conn/s (23.3 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 18.6 avg 23.3 max 530.6 median 21.5 stddev 12.5
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 42.9 req/s (23.3 ms/req)
+Request size [B]: 126.0
+
+Reply rate [replies/s]: min 40.6 avg 42.8 max 44.6 stddev 1.4 (9 samples)
+Reply time [ms]: response 22.4 transfer 0.4
+Reply size [B]: header 384.0 content 78.0 footer 0.0 (total 462.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.95 system 35.66 (user 23.5% system 76.5% total 100.0%)
+Net I/O: 24.6 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --client=0/1 --server=10.144.85.40 --port=3000 --uri=/embedded_insert?post[title]=goggin13&post[content]=helloworld --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 45.290 s
+
+Connection rate: 44.2 conn/s (22.6 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 19.7 avg 22.6 max 83.8 median 21.5 stddev 5.1
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 44.2 req/s (22.6 ms/req)
+Request size [B]: 126.0
+
+Reply rate [replies/s]: min 42.2 avg 44.1 max 46.2 stddev 1.2 (9 samples)
+Reply time [ms]: response 21.7 transfer 0.4
+Reply size [B]: header 384.0 content 78.0 footer 0.0 (total 462.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.55 system 34.73 (user 23.3% system 76.7% total 100.0%)
+Net I/O: 25.4 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --client=0/1 --server=10.144.85.40 --port=3000 --uri=/embedded_insert?post[title]=goggin13&post[content]=helloworld --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 47.161 s
+
+Connection rate: 42.4 conn/s (23.6 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 19.8 avg 23.6 max 475.0 median 21.5 stddev 11.5
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 42.4 req/s (23.6 ms/req)
+Request size [B]: 126.0
+
+Reply rate [replies/s]: min 36.8 avg 42.3 max 45.2 stddev 2.8 (9 samples)
+Reply time [ms]: response 22.6 transfer 0.4
+Reply size [B]: header 384.0 content 78.0 footer 0.0 (total 462.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.91 system 36.25 (user 23.1% system 76.9% total 100.0%)
+Net I/O: 24.4 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --client=0/1 --server=10.144.85.40 --port=3000 --uri=/embedded_insert?post[title]=goggin13&post[content]=helloworld --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 45.389 s
+
+Connection rate: 44.1 conn/s (22.7 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 19.8 avg 22.7 max 511.8 median 21.5 stddev 11.9
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 44.1 req/s (22.7 ms/req)
+Request size [B]: 126.0
+
+Reply rate [replies/s]: min 40.6 avg 44.0 max 45.4 stddev 1.5 (9 samples)
+Reply time [ms]: response 21.8 transfer 0.4
+Reply size [B]: header 384.0 content 78.0 footer 0.0 (total 462.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.65 system 34.73 (user 23.5% system 76.5% total 100.0%)
+Net I/O: 25.3 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --client=0/1 --server=10.144.85.40 --port=3000 --uri=/embedded_insert?post[title]=goggin13&post[content]=helloworld --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 45.488 s
+
+Connection rate: 44.0 conn/s (22.7 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 20.2 avg 22.7 max 174.2 median 21.5 stddev 5.7
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 44.0 req/s (22.7 ms/req)
+Request size [B]: 126.0
+
+Reply rate [replies/s]: min 43.0 avg 44.0 max 45.2 stddev 0.7 (9 samples)
+Reply time [ms]: response 21.8 transfer 0.4
+Reply size [B]: header 384.0 content 78.0 footer 0.0 (total 462.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.46 system 35.03 (user 23.0% system 77.0% total 100.0%)
+Net I/O: 25.2 KB/s (0.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
