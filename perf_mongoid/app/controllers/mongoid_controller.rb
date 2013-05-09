@@ -40,18 +40,16 @@ class MongoidController < ApplicationController
   end
   
   def embedded_insert
-    queries = (params[:queries] || 1).to_i
-
-    results = (1..queries).map do
-      # get a random row from the database, which we know has 10000
-      # rows with ids 1 - 10000
-      user = User.find random_user_id
-    	post = user.posts.build params[:post]
-      post.save
-
-      post
-    end
-    render :json => results    
+    # get a random row from the database, which we know has 10000
+    # rows with ids 1 - 10000
+    @user = User.find random_user_id
+  	@post = @user.posts.build params[:post]
+    
+    if @post.save
+      render json: @post, status: :created
+    else
+      render json: @post.errors, status: :unprocessable_entity
+    end   
   end
   
   def embedded_update
