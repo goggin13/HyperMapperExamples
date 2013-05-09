@@ -1,14 +1,8 @@
-SERVER = 'localhost'
+SERVER = '10.144.85.40'
 PORT = 3000
-ITERATIONS = 1
-DEFAULT_NUM_CONNECTIONS = 1000
+ITERATIONS = 5
+DEFAULT_NUM_CONNECTIONS = 2000
 MULTI_QUERIES = 10
-
-httperf --hog \
-        --server localhost \
-        --port 3000 \
-        --uri single_query \
-        --num-conns 10
 
 def do_httperf(uri, num_conns)
   command = <<BASH
