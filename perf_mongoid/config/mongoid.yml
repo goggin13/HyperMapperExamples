@@ -9,7 +9,8 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
+        - 10.39.101.104:27017
+        - 10.100.202.52:27018
       options:
         # Change whether the session persists in safe mode by default.
         # (default: false)
