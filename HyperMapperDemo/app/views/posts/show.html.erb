@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @post.user_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @post.tags_as_string %>
+</p>
+
+
+<%= link_to 'Back', posts_path %>
+
+<% if signed_in? %>
+
+  <% if current_user.id == @post.user_id %>
+    <%= link_to 'Edit', edit_post_path(@post) %>
+  <% end %>
+
+  <%= form_for(:comment, url: post_comments_path(@post)) do |f| %>
+    <%= f.text_field :text, autocomplete: :off %><br/>
+    <%= f.hidden_field :post_id, value: @post.id %>
+    <%= f.submit "Comment" %>
+  <% end %>
+  
+<% end %>
+
+<% @post.comments.each do |comment| %>
+  <%= comment.text %> <br/>
+<% end %>
