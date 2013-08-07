@@ -1,9 +1,9 @@
 require 'hyperclient'
 
-system "/home/goggin/projects/install/bin/hyperdex rm-space users_two"
+system "hyperdex rm-space users_two"
 
 create = <<-BASH
-/home/goggin/projects/install/bin/hyperdex add-space <<EOF
+hyperdex add-space <<EOF
 space users_two 
 key id 
 attributes 

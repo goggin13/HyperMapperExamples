@@ -48,3 +48,5 @@ h.put "users", "e939a93ef8f1988fd26599c3ed736a69", [
 	["hashed_password", "bc95967b18cfc9995eceb983e5459fe22f74cbfc4cdb5f66aa2efd49f2b3f68d"], 
 	["created_at", 1365627624]
 ]
+
+puts "puts completed without errors"

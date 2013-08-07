@@ -1,9 +1,9 @@
 require 'hyperclient'
 
-system "/home/goggin/projects/install/bin/hyperdex rm-space users_two"
+system "hyperdex rm-space users_two"
 
 create = <<-BASH
-/home/goggin/projects/install/bin/hyperdex add-space <<EOF
+hyperdex add-space <<EOF
 space users_two 
 key id 
 attributes 
@@ -18,7 +18,7 @@ system create
 
 client = HyperClient.new '127.0.0.1', 1982
 
-client.put 'users', 'test', [
+client.put 'users_two', 'test', [
   ['username', 'goggin13'],
   ['created_at', 15]
 ]
